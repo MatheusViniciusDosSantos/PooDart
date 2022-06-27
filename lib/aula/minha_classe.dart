@@ -25,9 +25,8 @@ main() {
   print(camiseta.tamanho);
   print(aprovacao);
 
-  var aluno = Aluno(CPF: "111.111.111-11", nome: "Mariana", RA: 1111);
+  var aluno = Aluno(RA: 1111);
   aluno.anoNascimento = 2002;
-  aluno._anoNascimento = 2020;
 }
 
 class MinhaClasse {

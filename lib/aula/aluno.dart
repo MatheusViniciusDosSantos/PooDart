@@ -55,5 +55,27 @@ class Aluno {
       return "CPf inválido";
     }
   }
+
+  set cpf(String cpf) {
+    if (cpf.length > 10) {
+      this._cpf = cpf;
+    }
+  }
+
   //Validar email(formato)
+  String get email {
+    if (_email.contains('@')) {
+      return _email;
+    } else {
+      return "E-mail não foi formatado corretamente";
+    }
+  }
+
+  set email(String email) {
+    if (!this._email.contains('@')) {
+      throw Exception("E-mail informado não possuí formatação de email.");
+    } else {
+      this._email = email;
+    }
+  }
 }
